@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tela de Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <!-- Formulário de cadastro -->
+        <div class="form-container cadastro-container">
+
+            <form id="formCadastro">
+
+                <h1>Criar Conta</h1>
+
+                <div class="social-container">
+                    <span>f</span>
+                    <span>in</span>
+                    <span>X</span>
+                </div>
+
+                <span class="descricao">
+                    Ou use seu email para se cadastrar
+                </span>
+
+                <input type="text" id="nome" placeholder="Nome">
+
+                <input type="email" id="emailCadastro" placeholder="Email">
+
+                <input type="password" id="senhaCadastro" placeholder="Senha">
+
+                <button type="submit">Sign Up</button>
+
+                <p id="mensagemCadastro"></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- Formulário de login -->
+        <div class="form-container login-container">
+
+            <form id="formLogin">
+
+                <h1>Entrar no Sistema</h1>
+
+                <div class="social-container">
+                    <span>f</span>
+                    <span>in</span>
+                    <span>X</span>
+                </div>
+
+                <span class="descricao">
+                    Ou use sua conta de usuário
+                </span>
+
+                <input type="text" id="usuario" placeholder="Usuário">
+
+                <input type="password" id="senha" placeholder="Senha">
+
+                <a href="#" class="esqueceu-senha">
+                    Esqueceu sua senha?
+                </a>
+
+                <button type="submit">Entrar</button>
+
+                <p id="mensagem"></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- Painel deslizante -->
+        <div class="overlay-container">
+
+            <div class="overlay">
+
+                <!-- Painel esquerdo -->
+                <div class="overlay-panel overlay-left">
+
+                    <h1>Bem-vindo de volta!</h1>
+
+                    <p>
+                        Para continuar conectado,
+                        faça login com seus dados.
+                    </p>
+
+                    <button type="button" class="botao-transparente" id="entrar">
+                        Sign In
+                    </button>
+
+                </div>
+
+
+                <!-- Painel direito -->
+                <div class="overlay-panel overlay-right">
+
+                    <h1>Olá, amigo!</h1>
+
+                    <p>
+                        Insira seus dados pessoais
+                        e comece sua jornada conosco.
+                    </p>
+
+                    <button type="button" class="botao-transparente" id="cadastrar">
+                        Sign Up
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
